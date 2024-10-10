@@ -1,0 +1,433 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: gray;
+    height: 100vh;
+    width: 100%;
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* HEADER AND NAV STYLING */
+header{
+    background: url(../assets/Images/foodiesfeed.com_pizza-ready-for-baking.jpg) center 30%/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.nav{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Lucida Console", "Courier New", monospace;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 1%;
+}
+a{
+    text-decoration: none;
+    color: #fafafa;
+}
+.nav-items{
+    margin-top: 1%;
+    display: inline-block;
+}
+.nav-items:hover{
+    font-weight: 600;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.header-content{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    /* justify-content: center; */
+    margin-top: 10%;
+    margin-left: 10%;
+}
+h1{
+    font-size: 3em;
+}
+.red-highlighter{
+    color: red;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+}
+.header-btn{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 50px;
+    line-height: 30px;
+    width: 150px;
+    background-color: transparent;
+    color: red;
+    font-size: 1em;
+}
+.header-btn:hover{
+    background-color: red;
+    color: white;
+    font-size: 1.1em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+section{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+}
+
+/*STYLE  ALL the Section Heading */
+h2 {
+    font-size: 225%;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+    border-bottom: 3px solid #f63854;
+    margin: 1.5em 0em 1em 0em;
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING THE FEATURES Sections */
+.card{
+    width: 350px;
+    margin: 2em 1em;
+    padding: 25px 10px 15px 10px;
+    line-height: 30px;
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+}
+
+.features h3{
+    text-align: center;
+    color: rgb(88, 86, 86);
+}
+
+.features-icon{
+    height: 4em;
+    width: 4em; 
+    margin-left: 20%;
+    margin-right: auto; 
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.card-container{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card{
+    flex: 1 1 calc(33.33%);
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING THE Steps Sections */
+.steps-section{
+    background-color: #fafafa;
+}
+.steps-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 3em;
+}
+.steps-container img{
+    width: 300px;
+    height: 500px;
+}
+.steps{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.steps li{
+    /* line-height: 50px; */
+    font-size: 1.2em;
+    list-style-type: none;
+    margin: 10px 0;
+
+}
+.step-number{
+    font-size: 1.2em;
+    color: #f63854;
+    border: 2px solid #f63854;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 20px;
+    line-height: 80px;
+}
+.step-context{
+    text-align: justify;
+}
+
+/* REVIEW SECTION */
+
+.review-section{
+    background: url(../assets/Images/foodiesfeed.com_pizza-ready-for-baking.jpg) center 30%/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.review-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+}
+.review-card{
+    width: 350px;
+    margin: 2em 1em;
+    padding: 25px 10px 15px 10px;
+    line-height: 30px;
+    background-color: rgb(237, 237, 237);
+    flex: 1 1 calc(30%);
+    text-align: center;
+    border-radius: 10px;
+}
+.review-card img{
+    border-radius: 50%;
+    width: 5em;
+}
+/* WRITE MEDIA QUERY CODE FOR FLEX for SMALLER DEVICE */
+
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING PLAN PAGE */
+
+.plan-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 100px;
+    margin: 1em 0 4em 0; 
+    
+}
+.plan-card{
+    flex: 1 1 calc(33%-5px);
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    border: 2px solid rgb(169, 169, 169);
+    border-radius: 2%;
+    width: 280px;
+    line-height: 30px;
+    padding: 1em;
+    margin: 1em;
+}
+.plan-card h3{
+    text-align: center;
+}
+.plan-card ul{
+    list-style-type: none;
+}
+.plan-card .price{
+    color: #f63854;
+    font-size: 2.5em;
+}
+.signup-button {
+    text-align: center;
+    
+}
+.hungry-btn{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #f63854;
+    background-color: #f63854;
+    color: #fafafa;
+    border-radius: 50px;
+    line-height: 30px;
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+
+    /* transform: translate(0,50%); */
+}
+.hungry-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING CONTACT US  */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1f1f1f;
+    width: 100%;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 150px;
+    margin: 2em 3em;
+}
+.contact-inner{
+    flex: 1 1 calc(40%);
+}
+.contact-us-Image{
+    align-self: center;
+}
+.contact-container img{
+    width: 80%;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    line-height: 35px;
+    font-size: 1.5em;
+}
+.contact-us-form input[type="text"], input[type="email"],textarea,select{
+    width: 100%;
+    line-height: 30px;
+    border: 2px solid rgb(84, 84, 84);
+    padding: 0 5px;
+}
+.contact-us-form select{
+    height: 30px;
+}
+#agree-content{
+    font-size: 0.6em;
+}
+.form-inner{
+    flex: 1 1 calc(100%);
+
+}
+.send-btn{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #f63854;
+    background-color: #f63854;
+    color: #fafafa;
+    border-radius: 50px;
+    line-height: 30px;
+    width: 200px;
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.send-btn:hover {
+    transform: scale(1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* FOOTER STYLING */
+footer {
+    background-color: rgb(58, 56, 56);
+}
+
+.footer-parent {
+    padding-top: 3%;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-parent ul{
+    list-style-type: none;
+}
+.footer-parent a{
+    text-decoration: none;
+}
+
+.footer-text {
+    width: 70%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: flex-start;
+}
+.text-value {
+    padding-right: 6%;
+    font-size: 0.8em;
+}
+.text-value a,
+.icon-footer {
+    font-size: 160%;
+    color: white;
+}
+
+.social-link {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-link li {
+    padding-right: 10%;
+}
+
+.footer-p {
+    margin: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+/* ********************************* */

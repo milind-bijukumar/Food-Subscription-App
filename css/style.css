@@ -1,0 +1,440 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: gray;
+    height: 100vh;
+    width: 100%;
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* HEADER AND NAV STYLING */
+header{
+    background: url(../assets/Images/foodiesfeed.com_pizza-ready-for-baking.jpg) center 30%/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.nav{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Lucida Console", "Courier New", monospace;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 1%;
+}
+a{
+    text-decoration: none;
+    color: #fafafa;
+}
+.nav-items{
+    margin-top: 1%;
+    display: inline-block;
+}
+.nav-items:hover{
+    font-weight: 600;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.header-content{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    margin-top: 10%;
+    margin-left: 10%;
+}
+h1{
+    font-size: 3em;
+}
+.red-highlighter{
+    color: red;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+}
+.header-btn{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 50px;
+    line-height: 30px;
+    width: 150px;
+    background-color: transparent;
+    color: red;
+    font-size: 1em;
+}
+.header-btn:hover{
+    background-color: red;
+    color: white;
+    font-size: 1.1em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* GLOBAL STYLING for section, btn , h2, container*/
+section{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #f63854;
+    background-color: #f63854;
+    color: #fafafa;
+    border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+h2 {
+    font-size: 225%;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+    border-bottom: 3px solid #f63854;
+    margin: 1.5em 0em 1em 0em;
+}
+
+.container{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    gap: 50px;
+}
+.card{
+    width: 300px;
+    margin: 2em 1em;
+    padding: 25px 10px 15px 10px;
+    line-height: 30px;
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    flex: 1 1 calc(33%-10px);
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* RESPONSIVE DESIGN */
+/* Mobile */
+@media only screen and (min-width:320px) and (max-width:480px){
+    /* CARD*/
+    .card{
+        flex: 1 1 calc(100%-10px);
+    }
+    /* STEPS - MAKING STEPS VERTICAL */
+    .steps p{
+        font-size: 1.2em;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-inner{
+        flex: 1 1 calc(100%);
+    }
+    .contact-us-form{
+        width: 75%;
+    }
+}
+
+/* Tab */
+@media only screen and (min-width:768px ) and (max-width:1024px){
+    /* CARD RESPONSIVE DESIGN */
+    .card{
+        flex: 1 1 calc(50%-10px);
+    }
+
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING THE FEATURES Sections */
+
+.features h3{
+    text-align: center;
+    color: rgb(88, 86, 86);
+}
+
+.features-icon{
+    height: 4em;
+    width: 4em; 
+}
+
+.features .card p{
+    text-align: justify;
+    padding: 1em;
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING Steps Sections */
+.steps-section{
+    background-color: #fafafa;
+}
+.steps-section img{
+    width: 300px;
+    height: 500px;
+}
+.steps{
+    align-self: center;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+.steps p{
+    font-size: 1.2em;
+    text-align: justify;
+    display: flex;
+    /* flex-direction: column; */ /*for smaller device*/
+    /* align-items: center; *//*for smaller device*/
+}
+.step-number{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f63854;
+    border: 2px solid #f63854;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    line-height: auto;
+}
+.step-context{
+    display: inline-block;
+    width: auto;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* REVIEW SECTION */
+.review-section{
+    background: url(../assets/Images/foodiesfeed.com_pizza-ready-for-baking.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.review-card{
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+    color: rgb(45, 45, 45);
+    border-radius: 2%;
+}
+.review-card img{
+    border-radius: 50%;
+    width: 5em;
+}
+.rating{
+    display: inline-block;
+}
+.rating img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+}
+/* WRITE MEDIA QUERY CODE FOR FLEX for SMALLER DEVICE */
+
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING PLAN PAGE */
+.plan-card{
+    border: 2px solid rgb(169, 169, 169);
+    padding: 1em;
+}
+.plan-card h3{
+    text-align: center;
+}
+.plan-card ul{
+    list-style-type: none;
+    margin: 10px 0;
+}
+.plan-card ul li img{
+    width: 20px;
+    height: 20px;
+}
+.plan-card .price{
+    color: #f63854;
+    font-size: 2.5em;
+}
+.hungry-btn{
+    font-size: 1em;
+    width: 50%;
+    /* transform: translate(0,50%); */
+}
+.hungry-btn:hover {
+    transform: scale(1.2);
+}
+
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+
+/* STYLING CONTACT US  */
+.contact-section{
+    background-color: #1f1f1f;
+    width: 100%;
+}
+.contact-inner{
+    flex: 1 1 calc(50%-1px);
+}
+.contact-us-Image{
+    align-self: center;
+}
+.contact-container img{
+    width: 70%;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 40%; */
+    line-height: 35px;
+    font-size: 1.5em;
+}
+.contact-us-form input[type="text"], input[type="email"],textarea,select{
+    width: 100%;
+    line-height: 30px;
+    border: 2px solid rgb(84, 84, 84);
+    padding: 0 5px;
+}
+.contact-us-form select{
+    height: 30px;
+}
+#agree-content{
+    font-size: 0.6em;
+}
+.form-inner{
+    flex: 1 1 calc(100%);
+
+}
+.send-btn{
+    font-size: 0.8em;
+    width: 200px;
+}
+.send-btn:hover {
+    transform: scale(1.2);
+}
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
+/* FOOTER STYLING */
+footer {
+    background-color: rgb(58, 56, 56);
+}
+
+.footer-container {
+    padding-top: 3%;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container ul{
+    list-style-type: none;
+}
+.footer-container a{
+    text-decoration: none;
+}
+
+.footer-app-detail-list {
+    width: 70%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+.footer-app-detail  {
+    padding-right: 6%;
+}
+.footer-app-detail img{
+    width: 100px;
+    height: 30px;
+ }
+.social-link {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-link img{
+    width: 1.4em;
+    height: 1.4em;
+}
+.social-link li {
+    padding-right: 10%;
+}
+.footer-copyright{
+    margin: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+/********************************** */
